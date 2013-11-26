@@ -1,0 +1,39 @@
+
+@font-face {
+  font-family: 'MetaBold-Roman';
+  src: url('fonts/MtBdRg.ttf');
+}
+@font-face {
+  font-family: 'MetaBook-Roman';
+  src: url('fonts/MtBR.ttf');
+}
+@font-face {
+  font-family: 'MetaBoldLF-Roman';
+  src: url('fonts/MtBdLFR.ttf');
+}
+@font-face {
+  font-family: 'MetaBoldLF-Caps';
+  src: url('fonts/MtBdLFC.ttf');
+}
+#cardCanvas{
+  position:absolute;
+  left:-9999px;
+  top:-9999px;
+}
+#cardFront{
+  position:absolute;
+  left:-9999px;
+  top:-9999px;
+}
+#generating{display:none;}
+#downloadCard,#downloadBack{
+  display:none;
+}
+#loading{
+  animation: rotation 1s infinite linear;
+  display:inline-block;
+}
+@keyframes rotation {
+  from {transform: rotate(0deg);}
+  to   {transform: rotate(359deg);}
+}
